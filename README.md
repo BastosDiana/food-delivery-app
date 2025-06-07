@@ -22,12 +22,12 @@ This is a full-stack food ordering web application built using the MERN stack (M
 - Admin panel to manage menu items, orders
   
 ## Problems
-1. Authentication Fixes
+- Authentication Fixes
 Login: Return 401 Unauthorized if credentials are incorrect (currently returns 200 OK).
 Registration: Return 401 Unauthorized if the user already exists (currently returns 200 OK).
-2. UI Enhancement
+- UI Enhancement
 Add a zoom-in effect on hover for each menu image.
-3. Order UI Fix
+- Order UI Fix
 Ensure the “-” (minus) icon in the order section maintains a consistent position when the user interacts with it (e.g., when quantity changes).
   
 ## Technologies Used
