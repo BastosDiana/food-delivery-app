@@ -1,9 +1,17 @@
 # Food Ordering Web App Technical Assessment (MERN Stack)
 
+## Problems
+- Authentication Fixes
+Login: Return 401 Unauthorized if credentials are incorrect (currently returns 200 OK).
+Registration: Return 401 Unauthorized if the user already exists (currently returns 200 OK).
+- UI Enhancement
+Add a zoom-in effect on hover for each menu image.
+- Order UI Fix
+Ensure the “-” (minus) icon in the order section maintains a consistent position when the user interacts with it (e.g., when quantity changes).
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Problems](#problems)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,15 +28,6 @@ This is a full-stack food ordering web application built using the MERN stack (M
 - Stripe Payment Integration: Secure and reliable payment processing using Stripe.
 - Order tracking
 - Admin panel to manage menu items, orders
-  
-## Problems
-- Authentication Fixes
-Login: Return 401 Unauthorized if credentials are incorrect (currently returns 200 OK).
-Registration: Return 401 Unauthorized if the user already exists (currently returns 200 OK).
-- UI Enhancement
-Add a zoom-in effect on hover for each menu image.
-- Order UI Fix
-Ensure the “-” (minus) icon in the order section maintains a consistent position when the user interacts with it (e.g., when quantity changes).
   
 ## Technologies Used
 - **Frontend:** React.js, React Context API, React Router
