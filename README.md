@@ -10,13 +10,21 @@ Add a zoom-in effect on hover for each menu image.
 Ensure the “-” (minus) icon in the order section maintains a consistent position when the user interacts with it (e.g., when quantity changes).
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [API Documentation](#api-documentation)
+- [Food Ordering Web App Technical Assessment (MERN Stack)](#food-ordering-web-app-technical-assessment-mern-stack)
+  - [Problems](#problems)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Clone the Repository](#clone-the-repository)
+  - [Backend Setup](#backend-setup)
+  - [Frontend Setup](#frontend-setup)
+  - [Admin App Setup](#admin-app-setup)
+  - [Usage](#usage)
+  - [Screenshots](#screenshots)
+  - [API Documentation](#api-documentation)
 
 ## Introduction
 This is a full-stack food ordering web application built using the MERN stack (MongoDB, Express, React, Node.js). The application consists of a customer-facing app for ordering food and an admin app for managing orders, menu items, and more.
@@ -43,10 +51,7 @@ This is a full-stack food ordering web application built using the MERN stack (M
 - MongoDB
 
 ### Clone the Repository
-```sh
-git clone https://github.com/DulanjaliSenarathna/mern-food-delivery-app.git
-cd mern-food-delivery-app
-```
+
 
 ## Backend Setup
 Navigate to the backend directory:
