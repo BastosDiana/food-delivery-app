@@ -8,13 +8,14 @@ const loginUser = async (req,res) =>{
     try {
         const user = await userModel.findOne({email});
 
+        // mask whether user exists or not for added privacy and security
         if(!user){
-           return res.json({success:false, message:'User does not exist'}) 
+            return res.status(401).json({success:false, message:'Unauthorized'})
         }
-        const isMatch = await bcrypt.compare(password,user.password)
 
+        const isMatch = await bcrypt.compare(password,user.password)
         if(!isMatch){
-            return res.json({success:false, message:'Invalid credentials'})
+            return res.status(401).json({success:false, message:'Unauthorized'})
         }
 
         const token = createToken(user._id);
@@ -36,8 +37,8 @@ const registerUser = async (req, res) =>{
 
         // checking is user already exists
         const exists = await userModel.findOne({email});
-        if(exists){
-            return res.json({success:false, message:'User already exists'})
+        if(exists){ // note this error message exposes whether user exists or not
+            return res.status(401).json({success:false, message:'User already exists'})
         }
 
         //validating email format and strong password
